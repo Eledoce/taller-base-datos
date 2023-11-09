@@ -16,7 +16,9 @@ docker network create la-red-xd
 # nodejs
 
 ```sh
-docker build -t node:edoce .
+docker run -d --network la-red-xd  --name contenedor-node angelramirez1212/taller-db:latest
+```
+
 ```
 
 - [SQL Server ](./SQL-Server/Config.md)
@@ -24,3 +26,4 @@ docker build -t node:edoce .
 - [MongoDB]
 - [MySQL]
 - [Redis]
+```
