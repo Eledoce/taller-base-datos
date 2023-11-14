@@ -2,9 +2,16 @@
 
 ## Descargar imágenes
 
-```
+```sh
 docker pull angelramirez1212/taller-db:latest
+```
+
+```sh
 docker pull mcr.microsoft.com/mssql/server:2019-latest
+```
+
+```sh
+docker pull
 ```
 
 # Crear red
