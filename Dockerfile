@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i mssql
+RUN npm i mssql redis
 
 CMD ["tail", "-f", "/dev/null"]
