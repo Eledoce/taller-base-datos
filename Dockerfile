@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i mssql redis
+RUN npm i mssql redis mysql2
+
 
 CMD ["tail", "-f", "/dev/null"]

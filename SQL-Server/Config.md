@@ -37,6 +37,8 @@ CREATE TABLE Alumnos (
 
 ## Insertar datos
 
+_**NOTA: Antes de ejecutarlo agregar un registro con sus datos**_
+
 ```sql
 INSERT INTO Alumnos (Nombre, Edad) VALUES ('Juan', 18);
 INSERT INTO Alumnos (Nombre, Edad) VALUES ('María', 20);

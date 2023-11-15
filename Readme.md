@@ -26,11 +26,8 @@ docker network create la-red-xd
 docker run -d --network la-red-xd  --name contenedor-node angelramirez1212/taller-db:latest
 ```
 
-```
-
 - [SQL Server ](./SQL-Server/Config.md)
-- [PostgreSQL]
-- [MongoDB]
+- [Redis](./Redis//Config.md)
 - [MySQL]
-- [Redis]
-```
+- [MongoDB]
+- [PostgreSQL]

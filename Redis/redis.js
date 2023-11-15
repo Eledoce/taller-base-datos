@@ -7,10 +7,9 @@ const main = async () => {
     .on('error', (err) => console.log('Redis Client Error', err))
     .connect()
 
-  await client.set('basca', '5678')
-  const value = await client.get('basca')
-  console.log('value', value)
-
+  await client.set('telefono', '735 123 4567')
+  const value = await client.get('telefono')
+  console.log('telefono es', value)
   await client.disconnect()
 }
 main()
