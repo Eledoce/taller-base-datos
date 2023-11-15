@@ -7,9 +7,11 @@ const main = async () => {
     .on('error', (err) => console.log('Redis Client Error', err))
     .connect()
 
-  await client.set('telefono', '735 123 4567')
-  const value = await client.get('telefono')
-  console.log('telefono es', value)
+  // obteniendo todos los valores de la base de datos
+  const value = await client.get('nombre')
+  console.log(value)
+
   await client.disconnect()
 }
+
 main()

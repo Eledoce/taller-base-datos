@@ -1,4 +1,4 @@
-// get the client
+// get the client xd
 const mysql = require('mysql2')
 
 // create the connection to database
