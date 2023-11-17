@@ -17,13 +17,7 @@ docker pull redis/redis-stack:7.2.0-v6
 # nodejs
 
 ```sh
-docker run -d  --name contenedor-node angelramirez1212/taller-db:latest
-```
-
-// TODO cambiar por contenedor del repo
-
-```sh
-docker run -d --name nodejs --network="host" imagen:basca5
+docker run -d  --name nodexs --network="host" angelramirez1212/taller-db:latest
 ```
 
 - [SQL Server ](./SQL-Server/Config.md)

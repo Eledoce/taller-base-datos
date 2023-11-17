@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i mssql redis mysql2 mongodb
+RUN npm i mssql redis mysql2 mongodb pg
 
 
 CMD ["tail", "-f", "/dev/null"]
