@@ -1,14 +1,18 @@
 # Crear contenedores
 
+Contenedor de base de datos
+
 ```sh
 docker run --name postgres-server --network la-red-xd -e POSTGRES_PASSWORD=123456789Abc -p 5432:5432 -d postgres:16
 ```
+
+Contenedor de interfaz
 
 ```sh
 docker run --name gui-postgre -p 82:80 --network la-red-xd -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' -d dpage/pgadmin4
 ```
 
-# Conectarse a la base de datos desde pgadmin
+# Conectarse a la base de datos desde pgadmin https://localhost:82
 
 ## login
 
@@ -27,7 +31,11 @@ En `general` agregar un nombre y en la pestaña `connection` agregar los siguien
 
 # Crear base de datos dumbo
 
-_**NOTA: Antes de ejecutarlo agregar un registro con sus datos**_
+- Clic derecho en la conexión creada
+- Create > Database, en `general` agregar el nombre `dumbo`
+- seleccionar dumbo en el panel izquierdo, clic derecho, seleccionar `script create`
+- pegar el sql
+  _**NOTA: Antes de ejecutarlo agregar un registro con sus datos**_
 
 ```sql
 CREATE TABLE IF NOT EXISTS alumnos (
@@ -43,3 +51,8 @@ INSERT INTO alumnos (nombre, apellido, edad) VALUES
 ('María', 'Guevara', 22),
 ('Carlos', 'López', 21);
 ```
+
+- hacer una consulta para ver los registros
+  ```sql
+  SELECT * FROM alumnos;
+  ```

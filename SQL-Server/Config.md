@@ -19,13 +19,19 @@ docker run  -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=123456789Abc" -e "MSSQL_PID
 - username: `sa`
 - password: `123456789Abc`
 
+Si marca un error dar clic en `Enable Trust Server Certificate`
+
 ### Crear base de datos
+
+Seleccionar new query y ejecutar el siguiente comando
 
 ```sql
 CREATE DATABASE MiBaseDeDatos;
 ```
 
 ## Crear tabla
+
+seleccionar `MiBaseDeDatos`, new query, ejecutar el siguiente comando
 
 ```sql
 CREATE TABLE Alumnos (

@@ -15,7 +15,7 @@ docker pull mongo-express
 ```
 
 ```sh
-docker pull mysql:8
+docker pull mysql:8.0
 ```
 
 ```sh
@@ -53,7 +53,7 @@ docker run -d  --name nodexs --network="host" angelramirez1212/taller-db:latest
 # Limitar uso de ram y núcleos de Docker
 
 - abrir una terminal
-- ejecutar el siguiente comando
+- ejecutar el siguiente comando **y después reiniciar**
 
 ```sh
 echo [wsl2] > .wslconfig

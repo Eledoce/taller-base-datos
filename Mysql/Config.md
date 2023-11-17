@@ -7,10 +7,12 @@ docker network create la-red-xd
 # Crear contenedor de mysql
 
 ```sh
-docker run --name el-sql-mio --network la-red-xd -e MYSQL_ROOT_PASSWORD=123456789Abc -p 3306:3306  -d mysql:8
+docker run --name el-sql-mio --network la-red-xd -e MYSQL_ROOT_PASSWORD=123456789Abc -p 3306:3306  -d mysql:8.0
 ```
 
 # Creación de la base de datos
+
+Los datos de conexión son:
 
 - user: root
 - pass: 123456789Abc
@@ -29,7 +31,14 @@ Se puede usar tanto
 
 - ### Azure data studio
 
-  Instalar extención de mysql
+  Instalar extensión de mysql
+  iniciar sesión con los datos de conexión al igual que SQL server, en `connection type` seleccionar `MySQL`
+
+  - connection type: `MySQL`
+  - server name: `localhost`
+  - authentication type: `Password`
+  - username: `root`
+  - password: `123456789Abc`
 
   _**NOTA: no se tiene que especificar el puerto al iniciar sesión**_
 
