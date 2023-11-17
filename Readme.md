@@ -1,5 +1,8 @@
 # Docker
 
+- instalar docker, descargar desde https://www.docker.com/products/docker-desktop/
+- instalar azure data studio para conectarse a las bases de datos, descargar desde https://azure.microsoft.com/es-es/products/data-studio/
+
 ## Descargar imágenes
 
 ```sh
