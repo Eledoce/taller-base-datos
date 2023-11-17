@@ -8,7 +8,7 @@ const main = async () => {
     .connect()
 
   // obteniendo todos los valores de la base de datos
-  const value = await client.get('nombre')
+  const value = await client.get('basca')
   console.log(value)
 
   await client.disconnect()

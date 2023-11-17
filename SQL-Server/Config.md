@@ -6,7 +6,7 @@ docker push new-repo:tagname
 ## Iniciar contenedor
 
 ```sh
-docker run  --network la-red-xd -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=123456789Abc" -e "MSSQL_PID=Express" -p 1433:1433 -d --name sql-server mcr.microsoft.com/mssql/server:2019-latest
+docker run  -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=123456789Abc" -e "MSSQL_PID=Express" -p 1433:1433 -d --name sql-server mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 ## Conectarse a la base de datos desde azure data studio
