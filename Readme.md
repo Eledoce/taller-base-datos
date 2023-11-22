@@ -48,10 +48,10 @@ docker run -d  --name nodexs --network="host" angelramirez1212/taller-db:latest
 ```
 
 - [SQL Server ](./SQL-Server/Config.md)
-- [Redis](./Redis//Config.md)
 - [MySQL](./Mysql//Config.md)
-- [MongoDB](./MongoDB/Config.md)
 - [PostgreSQL](./PostgreSQL/Config.md)
+- [Redis](./Redis//Config.md)
+- [MongoDB](./MongoDB/Config.md)
 
 # Limitar uso de ram y núcleos de Docker
 
